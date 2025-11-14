@@ -1,0 +1,310 @@
+/* ==========================
+   Profile Page Custom Styles
+   ========================== */
+
+/* Card */
+.card-custom {
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    border: none;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* Header */
+.card-custom .card-header {
+    background: linear-gradient(90deg, #574f44, #8dba98);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Form labels */
+.form-label {
+    font-weight: 600;
+    color: #574f44;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #574f44;
+    background-color: #fff;
+    padding: 10px 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-control:focus {
+    border-color: #498259;
+    box-shadow: 0 0 0 0.2rem rgba(73, 130, 89, 0.25);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+/* Primary button */
+.btn-primary {
+    background: #498259;
+    border: none;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #3b6b47;
+}
+
+/* Back button */
+.btn-back {
+    background: #64605a;
+    color: #fff;
+    border: none;
+}
+.btn-back:hover {
+    background: #767671;
+    color: #fff;
+}
+
+/* Error alerts */
+.alert-danger {
+    border-radius: 8px;
+    background: #ffe5e5;
+    color: #a33a3a;
+    border: 1px solid #f5c2c2;
+    font-size: 14px;
+}
+
+/* Textarea resize */
+textarea.form-control {
+    resize: none;
+}
+
+/* Responsive tweaks */
+/* Mobile แสดงเป็น < และ > */
+@media (max-width: 576px) {
+  .pagination .page-item:first-child .page-link {
+    font-size: 0; /* ซ่อนข้อความ */
+  }
+  .pagination .page-item:first-child .page-link::before {
+    content: "<";
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .pagination .page-item:last-child .page-link {
+    font-size: 0;
+  }
+  .pagination .page-item:last-child .page-link::before {
+    content: ">";
+    font-size: 16px;
+    display: inline-block;
+  }
+}
+
+/* ====== Table (Order History) ====== */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+/* บังคับหัวตาราง */
+.table thead tr th {
+    background: #8dba98 !important;
+    color: #243642 !important;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* เนื้อหา */
+.table tbody tr td {
+    vertical-align: middle;
+    font-size: 15px;
+    color: #243642;
+}
+.table tbody tr:hover {
+    background: #f7f4ed;
+}
+
+/* ====== Badges ====== */
+.badge {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.badge.bg-secondary {
+    background: #a0a0a0;
+}
+.badge.bg-info {
+    background: #17a2b8;
+}
+.badge.bg-primary {
+    background: #7597ae;
+}
+.badge.bg-warning {
+    background: #f0ad4e;
+    color: #fff;
+}
+.badge.bg-success {
+    background: #498259;
+}
+.badge.bg-danger {
+    background: #e57373;
+}
+
+/* Small buttons */
+.btn-outline-dark {
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btn-outline-dark:hover {
+    background: #243642;
+    color: #fff;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 0px;
+}
+
+.pagination-info,
+.small.text-muted {
+    display: none !important;
+}
+
+.pagination .page-item .page-link {
+    border-radius: 6px;
+    margin: 0 3px;
+    padding: 6px 12px;
+    color: #243642;
+    border: 1px solid #dee2e6;
+    transition: 0.3s;
+}
+.pagination .page-item .page-link:hover {
+    color: #fff;
+    background-color: #767671;
+    border-color: #767671;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #64605a;
+    border-color: #64605a;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #999;
+    background: #f5f5f5;
+    border-color: #ddd;
+}
+
+/* ===== Profile ===== */
+.profile-header {
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.profile-banner {
+  height: 120px;
+  background: linear-gradient(180deg, #b9d7c1 0%, #8dba98 100%);
+}
+
+.profile-head-inner {
+  margin-top: -40px; /* ดึง avatar ลงมาทับแบนเนอร์ */
+  padding-bottom: 16px;
+}
+
+.avatar-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  border: 2px solid #fff;
+}
+
+.avatar {
+  font-size: 64px;   /* ขนาด icon */
+  color: #00000047;   
+}
+
+
+.username {
+  font-size: 14px;
+  color: #666;
+}
+
+.display-name {
+  font-weight: 700;
+  font-size: clamp(20px, 3.5vw, 26px);
+  color: #2b2b2b;
+  margin-top: 4px;
+}
+
+
+.form-title {
+  font-weight: 700;
+  color: #574f44; /* โทนธีมเดิม */
+  margin-bottom: 6px;
+}
+
+.form-input {
+  border-radius: 14px;
+  padding: 12px 14px;
+  border: 1.5px solid #dadada;
+  background: #fff;
+  color: #333;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.form-input:focus {
+  border-color: #8dba98;
+  box-shadow: 0 0 0 0.2rem rgba(141,186,152,0.25);
+  outline: none;
+}
+
+/* ปุ่มตามธีม */
+.btn-green {
+  background: #498259;
+  color: #fff;
+  border: none;
+}
+.btn-green:hover { background: #3a6a49; }
+
+.btn-outline-brown {
+  border: 2px solid #574f44;
+  color: #574f44;
+  background: #fff;
+}
+.btn-outline-brown:hover {
+  background: #574f44;
+  color: #fff;
+}
+
+/* การ์ดโค้งมนเนียน ๆ */
+.card {
+  border-radius: 16px;
+}
+
